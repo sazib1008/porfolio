@@ -1,0 +1,154 @@
+@import "tailwindcss";
+
+/* ============================================================
+   BASE RESET & ROOT
+   ============================================================ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  background-color: #06090e;
+}
+
+body {
+  background-color: #06090e;
+  color: #f8fafc;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #06090e; }
+::-webkit-scrollbar-thumb { background: #13e6c4; border-radius: 99px; }
+
+/* ============================================================
+   KEYFRAMES & ANIMATIONS
+   ============================================================ */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-blink { animation: blink 1s step-end infinite; }
+.animate-float { animation: float 5s ease-in-out infinite; }
+.animate-fade-in-up { animation: fadeInUp 0.8s ease forwards; }
+
+/* Mono font */
+.font-mono-custom { font-family: 'JetBrains Mono', monospace; }
+
+/* Heading font override */
+h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
+
+/* ============================================================
+   UTILITY CLASSES & DESIGN TOKENS
+   ============================================================ */
+
+/* Text gradient */
+.teal-gradient-text {
+  background: linear-gradient(135deg, #13e6c4 0%, #0dbfb0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism containers */
+.glass-panel {
+  background: rgba(10, 16, 26, 0.45);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.glass-card {
+  background: rgba(10, 16, 26, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  border-color: rgba(19, 230, 196, 0.15);
+  box-shadow: 0 12px 40px -12px rgba(19, 230, 196, 0.12);
+  transform: translateY(-2px);
+}
+
+/* Glow auroras */
+.bg-glow-spot {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+  filter: blur(140px);
+  opacity: 0.5;
+}
+
+/* Section transitions */
+.section-fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.section-fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom buttons */
+.btn-primary {
+  background-color: #13e6c4;
+  color: #06090e;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #0fd8b8;
+  box-shadow: 0 0 20px rgba(19, 230, 196, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: rgba(10, 16, 26, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #f8fafc;
+  transition: all 0.2s ease-in-out;
+}
+.btn-secondary:hover {
+  background: rgba(10, 16, 26, 0.6);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Form input styles (if contact uses fields) */
+.form-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 0.85rem 1.1rem;
+  font-size: 0.875rem;
+  color: #f8fafc;
+  outline: none;
+  transition: all 0.2s;
+}
+.form-input:focus {
+  border-color: rgba(19, 230, 196, 0.4);
+  box-shadow: 0 0 0 3px rgba(19, 230, 196, 0.08);
+}

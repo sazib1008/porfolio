@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "title": "Duralap",
+    "subtitle": "Real-time Messaging & Video Calling",
+    "description": "A full-featured real-time communication platform with instant messaging and peer-to-peer video calling. Built with a modern reactive Android frontend and a high-throughput backend.",
+    "category": "Mobile",
+    "tags": ["Kotlin", "Jetpack Compose", "WebRTC", "WebSockets", "Spring Boot", "MongoDB", "Redis"],
+    "features": [
+      "Real-time 1-on-1 & group messaging via WebSockets",
+      "Peer-to-peer video calling with WebRTC",
+      "End-to-end encrypted message storage in MongoDB",
+      "Redis pub/sub for presence & typing indicators",
+      "Jetpack Compose UI with adaptive layouts"
+    ],
+    "github": "https://github.com/sazib1008",
+    "live": null,
+    "featured": true,
+    "color": "#10b981"
+  },
+  {
+    "id": 2,
+    "title": "Meal Management System",
+    "subtitle": "University Hall Dining Platform",
+    "description": "A role-based dining management system for university residential halls, enabling Students, Managers, and Provosts to manage meals, track expenses, and generate analytical reports.",
+    "category": "Backend",
+    "tags": ["Kotlin", "Spring Boot", "PostgreSQL", "MySQL", "REST API", "Role-Based Access"],
+    "features": [
+      "Three-tier role system: Student, Manager, Provost",
+      "Daily meal booking, cancellation & tracking",
+      "Expense analytics and monthly bill generation",
+      "Admin dashboard with database-backed reporting",
+      "Secure JWT authentication & authorization"
+    ],
+    "github": "https://github.com/sazib1008",
+    "live": null,
+    "featured": true,
+    "color": "#818cf8"
+  },
+  {
+    "id": 3,
+    "title": "Bazar — Market Monitor",
+    "subtitle": "Commodity Price Tracking & Analytics",
+    "description": "A data-driven market monitoring platform that tracks daily commodity prices, detects inflation trends, and enables crowd-sourced or admin-verified price reporting to prevent artificial price hikes.",
+    "category": "Backend",
+    "tags": ["Kotlin", "Spring Boot", "PostgreSQL", "Analytics", "REST API", "Docker"],
+    "features": [
+      "Real-time commodity price tracking dashboard",
+      "Inflation trend analysis with visual charts",
+      "Crowd-sourced price submissions with admin verification",
+      "Algorithmic detection of artificial price manipulation",
+      "Clean analytical views with historical data"
+    ],
+    "github": "https://github.com/sazib1008",
+    "live": null,
+    "featured": true,
+    "color": "#f472b6"
+  },
+  {
+    "id": 4,
+    "title": "Personal Portfolio Web Platform",
+    "subtitle": "Interactive 3D React Showcase",
+    "description": "This very site — a premium, high-performance interactive 3D portfolio built with React, React Three Fiber, and Tailwind CSS, featuring a live particle constellation, animated 3D geometry, and a Node.js contact API.",
+    "category": "Frontend",
+    "tags": ["React", "Vite", "React Three Fiber", "Drei", "Tailwind CSS", "Node.js", "Express"],
+    "features": [
+      "Interactive 3D particle constellation background",
+      "Animated wireframe torus knot with mouse parallax",
+      "Scroll-driven section reveal animations",
+      "Glassmorphism UI with gold & emerald color scheme",
+      "Node.js Express backend contact API"
+    ],
+    "github": "https://github.com/sazib1008",
+    "live": "https://sazib.dev",
+    "featured": true,
+    "color": "#d4af37"
+  }
+]

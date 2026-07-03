@@ -1,0 +1,48 @@
+[
+  {
+    "category": "Mobile Development",
+    "icon": "📱",
+    "color": "#10b981",
+    "skills": [
+      { "name": "Native Android Development", "level": 90 },
+      { "name": "Kotlin", "level": 92 },
+      { "name": "Jetpack Compose", "level": 88 },
+      { "name": "Hilt (Dependency Injection)", "level": 82 },
+      { "name": "CameraX", "level": 78 }
+    ]
+  },
+  {
+    "category": "Backend Development",
+    "icon": "⚙️",
+    "color": "#d4af37",
+    "skills": [
+      { "name": "Spring Boot (Kotlin/Java)", "level": 88 },
+      { "name": "Node.js", "level": 85 },
+      { "name": "Express.js", "level": 83 },
+      { "name": "REST APIs & WebSockets", "level": 87 },
+      { "name": "WebRTC", "level": 80 }
+    ]
+  },
+  {
+    "category": "Databases",
+    "icon": "🗄️",
+    "color": "#818cf8",
+    "skills": [
+      { "name": "PostgreSQL", "level": 85 },
+      { "name": "MongoDB", "level": 82 },
+      { "name": "MySQL", "level": 80 },
+      { "name": "Redis", "level": 78 }
+    ]
+  },
+  {
+    "category": "Tools & Version Control",
+    "icon": "🛠️",
+    "color": "#f472b6",
+    "skills": [
+      { "name": "Git & GitHub", "level": 92 },
+      { "name": "Docker", "level": 78 },
+      { "name": "Architecture Design", "level": 85 },
+      { "name": "Clean Architecture / MVVM", "level": 83 }
+    ]
+  }
+]
