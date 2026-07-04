@@ -60,15 +60,15 @@
     "id": 4,
     "title": "Personal Portfolio Web Platform",
     "subtitle": "Interactive 3D React Showcase",
-    "description": "This very site — a premium, high-performance interactive 3D portfolio built with React, React Three Fiber, and Tailwind CSS, featuring a live particle constellation, animated 3D geometry, and a Node.js contact API.",
+    "description": "This very site — a premium, high-performance interactive 3D portfolio built with React, React Three Fiber, and Tailwind CSS, featuring a live particle constellation, animated 3D geometry, and Vercel serverless API.",
     "category": "Frontend",
-    "tags": ["React", "Vite", "React Three Fiber", "Drei", "Tailwind CSS", "Node.js", "Express"],
+    "tags": ["React", "Vite", "React Three Fiber", "Drei", "Tailwind CSS", "Vercel", "Serverless"],
     "features": [
       "Interactive 3D particle constellation background",
       "Animated wireframe torus knot with mouse parallax",
       "Scroll-driven section reveal animations",
       "Glassmorphism UI with gold & emerald color scheme",
-      "Node.js Express backend contact API"
+      "Vercel serverless contact API"
     ],
     "github": "https://github.com/sazib1008",
     "live": "https://sazib.dev",

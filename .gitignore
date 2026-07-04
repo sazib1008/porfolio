@@ -1,5 +1,6 @@
-# Dependency directories
+# Dependencies
 node_modules/
+frontend/node_modules/
 
 # Environment variables
 .env
@@ -8,7 +9,11 @@ node_modules/
 
 # Build output
 dist/
+frontend/dist/
 build/
+
+# Vercel
+.vercel/
 
 # Logs
 *.log
@@ -20,6 +25,3 @@ npm-debug.log*
 # IDE
 .vscode/
 .idea/
-
-# Data generated at runtime (optional — keep contacts private)
-backend/data/contacts.json
