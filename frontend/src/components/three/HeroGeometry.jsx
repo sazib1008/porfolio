@@ -14,10 +14,23 @@ export default function HeroGeometry({ mouse, scrollY }) {
   const targetRotY = useRef(0)
 
   useFrame(({ clock }) => {
-    const t = clock.elapsedTime
     const scroll = scrollY.current  // read ref — no re-render
 
     if (!groupRef.current || !meshRef.current) return
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      // Freeze all self-rotations, mouse parallax, and float bobs
+      meshRef.current.rotation.x = 0.5
+      meshRef.current.rotation.y = 0.5
+      groupRef.current.position.y = 0
+      
+      const scrollFactor = Math.max(0, 1 - scroll / 600)
+      groupRef.current.scale.setScalar(scrollFactor)
+      groupRef.current.position.z = -scroll * 0.006
+      return
+    }
+
+    const t = clock.elapsedTime
 
     // ── Self-rotation ──────────────────────────────────────────
     targetRotX.current += 0.003

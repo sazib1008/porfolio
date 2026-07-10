@@ -152,3 +152,31 @@ h1, h2, h3, h4 { font-family: 'Outfit', sans-serif; }
   border-color: rgba(19, 230, 196, 0.4);
   box-shadow: 0 0 0 3px rgba(19, 230, 196, 0.08);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+
+  /* Disable specific float/blink animations */
+  .animate-float,
+  .animate-fade-in-up,
+  .animate-blink,
+  .animate-ping {
+    animation: none !important;
+  }
+
+  /* Disable hover offsets */
+  .glass-card:hover,
+  .btn-primary:hover,
+  .btn-secondary:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}

@@ -68,9 +68,9 @@ export default function Skills() {
       <div className="absolute top-[30%] left-[5%] w-[250px] sm:w-[450px] h-[250px] sm:h-[450px] bg-glow-spot bg-[radial-gradient(circle,rgba(19,230,196,0.06)_0%,transparent_70%)]" />
       <div className="absolute bottom-[20%] right-[10%] w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-glow-spot bg-[radial-gradient(circle,rgba(99,102,241,0.08)_0%,transparent_70%)]" />
 
-      <div className="relative max-w-7xl mx-auto px-5 sm:px-6 w-full z-10 text-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-8 w-full z-10 text-center">
         {/* Section Heading */}
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 tracking-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-4 tracking-tight">
           Technical Stack 🛠️
         </h2>
         <p className="text-slate-400 text-sm sm:text-base mb-10 sm:mb-16 max-w-lg mx-auto leading-relaxed">
@@ -78,11 +78,11 @@ export default function Skills() {
         </p>
 
         {/* 4-column Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-left">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8 text-left">
           {STACK_DATA.map(({ title, Icon, skills }) => (
             <div
               key={title}
-              className="glass-card rounded-2xl p-5 sm:p-7 flex flex-col items-start"
+              className="glass-card rounded-2xl p-6 sm:p-8 flex flex-col items-start"
             >
               {/* Category Icon */}
               <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center bg-[#13e6c4]/5 border border-[#13e6c4]/15 mb-4 sm:mb-6 text-[#13e6c4]">
@@ -95,11 +95,11 @@ export default function Skills() {
               </h3>
 
               {/* Tags wrap */}
-              <div className="flex flex-wrap gap-2 sm:gap-2.5 mt-auto w-full">
+              <div className="flex flex-wrap gap-2 mt-auto w-full">
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-[10px] sm:text-xs font-semibold px-2.5 sm:px-4 py-1.5 sm:py-2 rounded-full border border-[#13e6c4]/10 bg-[#13e6c4]/5 text-[#13e6c4]/90 hover:border-[#13e6c4]/25 hover:bg-[#13e6c4]/10 transition duration-200 cursor-default"
+                    className="text-[10px] sm:text-xs font-semibold px-4 py-2 rounded-full border border-[#13e6c4]/10 bg-[#13e6c4]/5 text-[#13e6c4]/90 hover:border-[#13e6c4]/25 hover:bg-[#13e6c4]/10 transition duration-200 cursor-default"
                   >
                     {skill}
                   </span>

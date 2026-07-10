@@ -2,15 +2,13 @@
   {
     "id": 1,
     "title": "Duralap",
-    "subtitle": "Real-time Messaging & Video Calling",
-    "description": "A full-featured real-time communication platform with instant messaging and peer-to-peer video calling. Built with a modern reactive Android frontend and a high-throughput backend.",
+    "subtitle": "Offline-First Performance Tracking",
+    "description": "Provides athletes and sports enthusiasts with a premium, offline-first performance tracker that works without lag. It features millisecond-precise timing and local database caching for seamless metric analysis.",
     "category": "Mobile",
-    "tags": ["Kotlin", "Jetpack Compose", "WebRTC", "WebSockets", "Spring Boot", "MongoDB", "Redis"],
+    "tags": ["Kotlin", "Jetpack Compose", "Room DB", "Coroutines"],
     "features": [
-      "Real-time 1-on-1 & group messaging via WebSockets",
-      "Peer-to-peer video calling with WebRTC",
-      "End-to-end encrypted message storage in MongoDB",
-      "Redis pub/sub for presence & typing indicators",
+      "Millisecond-precise timing loops",
+      "Offline local caching with Room DB",
       "Jetpack Compose UI with adaptive layouts"
     ],
     "github": "https://github.com/sazib1008",
@@ -22,15 +20,13 @@
     "id": 2,
     "title": "Meal Management System",
     "subtitle": "University Hall Dining Platform",
-    "description": "A role-based dining management system for university residential halls, enabling Students, Managers, and Provosts to manage meals, track expenses, and generate analytical reports.",
+    "description": "Solves the problem of inefficient food resource allocation and manual expense tracking in university dining halls. It automates daily meal bookings, tracks expenses, and generates real-time analytical reports.",
     "category": "Backend",
-    "tags": ["Kotlin", "Spring Boot", "PostgreSQL", "MySQL", "REST API", "Role-Based Access"],
+    "tags": ["Spring Boot", "Kotlin", "PostgreSQL", "Docker"],
     "features": [
       "Three-tier role system: Student, Manager, Provost",
       "Daily meal booking, cancellation & tracking",
-      "Expense analytics and monthly bill generation",
-      "Admin dashboard with database-backed reporting",
-      "Secure JWT authentication & authorization"
+      "Expense analytics and monthly bill generation"
     ],
     "github": "https://github.com/sazib1008",
     "live": null,
@@ -41,15 +37,13 @@
     "id": 3,
     "title": "Bazar — Market Monitor",
     "subtitle": "Commodity Price Tracking & Analytics",
-    "description": "A data-driven market monitoring platform that tracks daily commodity prices, detects inflation trends, and enables crowd-sourced or admin-verified price reporting to prevent artificial price hikes.",
+    "description": "Aggregates commodity prices from multiple retail markets to protect consumers from artificial inflation. It detects inflation trends and allows crowd-sourced price reporting with admin verification.",
     "category": "Backend",
-    "tags": ["Kotlin", "Spring Boot", "PostgreSQL", "Analytics", "REST API", "Docker"],
+    "tags": ["Spring Boot", "Kotlin", "PostgreSQL", "REST APIs"],
     "features": [
       "Real-time commodity price tracking dashboard",
       "Inflation trend analysis with visual charts",
-      "Crowd-sourced price submissions with admin verification",
-      "Algorithmic detection of artificial price manipulation",
-      "Clean analytical views with historical data"
+      "Crowd-sourced price submissions with admin verification"
     ],
     "github": "https://github.com/sazib1008",
     "live": null,
@@ -71,7 +65,7 @@
       "Vercel serverless contact API"
     ],
     "github": "https://github.com/sazib1008",
-    "live": "https://sazib.dev",
+    "live": "https://porfolio-sazib1008.vercel.app/",
     "featured": true,
     "color": "#d4af37"
   }

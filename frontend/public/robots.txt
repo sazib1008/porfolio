@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://porfolio-sazib1008.vercel.app/sitemap.xml

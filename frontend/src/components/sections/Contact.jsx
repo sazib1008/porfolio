@@ -46,14 +46,14 @@ export default function Contact() {
               {/* Email Me Info Block */}
               <a
                 href="mailto:hello@sazib.dev"
-                className="flex items-center gap-4 group p-1.5 rounded-2xl"
+                className="flex items-center gap-4 group p-2 rounded-2xl"
               >
                 {/* Envelope Icon */}
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#13e6c4]/5 border border-[#13e6c4]/15 text-[#13e6c4] group-hover:bg-[#13e6c4]/10 group-hover:scale-105 transition duration-200 flex-shrink-0">
                   <MailIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-semibold text-slate-500 tracking-wider uppercase mb-0.5">
+                  <p className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase mb-1">
                     EMAIL ME
                   </p>
                   <p className="text-sm font-semibold text-slate-300 group-hover:text-white transition duration-200">
@@ -63,13 +63,13 @@ export default function Contact() {
               </a>
 
               {/* Based In Info Block */}
-              <div className="flex items-center gap-4 p-1.5 rounded-2xl">
+              <div className="flex items-center gap-4 p-2 rounded-2xl">
                 {/* Location Icon */}
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#13e6c4]/5 border border-[#13e6c4]/15 text-[#13e6c4] flex-shrink-0">
                   <MapPinIcon className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-[10px] font-semibold text-slate-500 tracking-wider uppercase mb-0.5">
+                  <p className="text-[10px] font-semibold text-slate-400 tracking-wider uppercase mb-1">
                     BASED IN
                   </p>
                   <p className="text-sm font-semibold text-slate-300">

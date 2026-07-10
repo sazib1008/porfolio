@@ -30,6 +30,11 @@ export default function ParticleField() {
 
   useFrame(({ clock }) => {
     if (!pointsRef.current) return
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      pointsRef.current.rotation.y = 0
+      pointsRef.current.rotation.x = 0
+      return
+    }
     const t = clock.elapsedTime
     pointsRef.current.rotation.y = t * 0.025
     pointsRef.current.rotation.x = t * 0.012

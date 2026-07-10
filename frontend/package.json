@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "convert-images": "node scripts/convert-to-webp.js"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.7",
@@ -17,6 +18,8 @@
     "lucide-react": "^1.21.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
+    "react-helmet-async": "^3.0.0",
+    "react-router-dom": "^7.18.1",
     "tailwindcss": "^4.3.1",
     "three": "^0.185.0"
   },
@@ -25,6 +28,7 @@
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.2",
     "oxlint": "^1.69.0",
+    "sharp": "^0.35.3",
     "vite": "^8.1.0"
   }
 }

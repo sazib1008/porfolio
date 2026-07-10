@@ -68,7 +68,8 @@ export default function Navbar() {
           })}
 
           <a
-            href="#resume"
+            href="/sazib_hossain_resume.pdf"
+            download="Sazib_Hossain_Resume.pdf"
             className="text-xs font-extrabold tracking-wider bg-[#13e6c4] text-black px-6 py-2.5 rounded-full hover:bg-[#0fd8b8] transition-all shadow-md hover:shadow-lg hover:shadow-[#13e6c4]/15"
           >
             RESUME
@@ -109,7 +110,8 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#resume"
+            href="/sazib_hossain_resume.pdf"
+            download="Sazib_Hossain_Resume.pdf"
             className="text-sm font-extrabold tracking-wider bg-[#13e6c4] text-black rounded-full py-2.5 text-center"
             onClick={() => setMenuOpen(false)}
           >
